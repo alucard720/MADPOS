@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import Sidebar from './SideBar';
 interface Product {
   id: number;
   name: string;
@@ -92,6 +92,10 @@ const InventoryManagement: React.FC = () => {
   };
 
   return (
+    <div className="hide-print flex flex-row h-screen antialiased text-blue-gray-800">
+      <div className="flex flex-row w-auto flex-shrink-0 pl-4 pr-2 py-4">
+           <Sidebar />
+          </div>
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Inventory Management</h1>
 
@@ -216,6 +220,7 @@ const InventoryManagement: React.FC = () => {
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 };
