@@ -14,26 +14,48 @@ const Navbar: React.FC = () => {
         </a> */}
         <ul className="flex flex-col space-y-2 mt-12">
           <li>
-            <NavLink to="/"
+
+          <NavLink 
+            to="/layout"
+            className={({ isActive }) =>
+              `flex items-center justify-center h-12 w-12 rounded-2xl ${
+                isActive
+                  ? 'bg-cyan-300 shadow-lg text-white'
+                  : 'text-cyan-100 hover:bg-cyan-400'
+              }`
+            }
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+            {/* <NavLink to="/layout"
                className="flex items-center">
               <span
-                className="flex items-center justify-center h-12 w-12 rounded-2xl"
-                x-bind:className="{
-                  'hover:bg-cyan-400 text-cyan-100': activeMenu !== 'pos',
-                  'bg-cyan-300 shadow-lg text-white': activeMenu === 'pos',
-                }"
+                className="flex items-center justify-center text-cyan-100 hover:bg-cyan-400h-12 w-12 rounded-2xl"
+                // x-bind:className="{
+                //   'hover:bg-cyan-400 text-cyan-100': activeMenu !== 'pos',
+                //   'bg-cyan-300 shadow-lg text-white': activeMenu === 'pos',
+                // }"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>
 
-              </span>
-            </NavLink>
+              </span>*/}
+            </NavLink> 
 
           </li>
           <li>
-            <NavLink to="/inventory-management"
-               className="flex items-center">
+          <NavLink 
+            to="/inventory-management"
+            className={({ isActive }) =>
+              `flex items-center justify-center h-12 w-12 rounded-2xl ${
+                isActive
+                  ? 'bg-cyan-300 shadow-lg text-white'
+                  : 'text-cyan-100 hover:bg-cyan-400'
+              }`
+            }
+          >
 
               <span className="flex items-center justify-center text-cyan-100 hover:bg-cyan-400 h-12 w-12 rounded-2xl">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

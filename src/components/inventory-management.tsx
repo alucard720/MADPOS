@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Sidebar from './SideBar';
+import ProductSearch from './ProductSearch';
+import ProductMenu from './ProductMenu';
 interface Product {
   id: number;
   name: string;
@@ -57,6 +59,10 @@ const InventoryManagement: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
   const [newProduct, setNewProduct] = useState<NewProduct>({ name: '', price: '', stock: '' });
+  const initItems: any[] = [];
+  const [searchKey, setSearchKey] = useState('');
+  const [cartItems, setCartItems] = useState(initItems);
+
 
   useEffect(() => {
     fetchInventory().then((items) => {
@@ -96,9 +102,31 @@ const InventoryManagement: React.FC = () => {
       <div className="flex flex-row w-auto flex-shrink-0 pl-4 pr-2 py-4">
            <Sidebar />
           </div>
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Inventory Management</h1>
-
+      
+    <div className="container mx-auto p-6">          
+    <div className="flex flex-col bg-blue-gray-50 h-full w-full py-6">
+              <ProductSearch onSearch={(searchKey: string) => {
+                setSearchKey(searchKey);
+              }} />
+              {/* <div className="h-full overflow-hidden mt-4">
+                <ProductMenu searchKey={searchKey} onSelect={(product: any) => {
+                  let found = false;
+                  for (var i = 0; i < cartItems.length; i++) {
+                    if (cartItems[i].product.name === product.name) {
+                      cartItems[i].quantity = cartItems[i].quantity + 1;
+                      found = true;
+                    }
+                  }
+  
+                  if (!found) {
+                    cartItems.push({ product, quantity: 1 });
+                  }
+  
+                  setCartItems([...cartItems]);
+                }} />
+              </div> */}
+            
+      <h1 className="text-2xl font-bold mb-4">Inventory Management</h1>               
       {isLoading ? (
         <div className="text-center py-4">Loading inventory...</div>
       ) : (
@@ -113,10 +141,11 @@ const InventoryManagement: React.FC = () => {
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
+
               {inventory.map((product) => (
                 <tr key={product.id}>
                   <td className="px-6 py-4 whitespace-nowrap">{product.name}</td>
-                  <td className="px-6 py-4 whitespace-nowrap">Rp. {product.price.toLocaleString()}</td>
+                  <td className="px-6 py-4 whitespace-nowrap">RD$ {product.price.toLocaleString()}</td>
                   <td className="px-6 py-4 whitespace-nowrap">{product.stock}</td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <button
@@ -144,7 +173,7 @@ const InventoryManagement: React.FC = () => {
           </table>
         </div>
       )}
-
+      
       <div className="mt-8">
         <h2 className="text-xl font-bold mb-4">
           {editingProduct ? 'Edit Product' : 'Add New Product'}
@@ -219,6 +248,7 @@ const InventoryManagement: React.FC = () => {
             </button>
           </div>
         </form>
+      </div>
       </div>
     </div>
     </div>

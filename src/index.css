@@ -34,10 +34,10 @@
       background-color: #80deea;
   }
   .bg-cyan-300, .hover\:bg-cyan-300:hover {
-      background-color: #4dd0e1;
+      background-color: #f4d079;
   }
   .bg-cyan-400, .hover\:bg-cyan-400:hover {
-      background-color: #26c6da;
+      background-color: #f4d079;
   }
   .bg-cyan-500, .hover\:bg-cyan-500:hover {
       background-color: #00bcd4;
@@ -66,7 +66,7 @@
       color: #80deea;
   }
   .text-cyan-300, .hover\:text-cyan-300:hover {
-      color: #4dd0e1;
+      color: #f4d079;
   }
   .text-cyan-400, .hover\:text-cyan-400:hover {
       color: #26c6da;
