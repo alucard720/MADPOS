@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Sidebar from './SideBar';
 import ProductSearch from './ProductSearch';
+import axios from 'axios';
 import ProductMenu from './ProductMenu';
 interface Product {
   id: number;
   name: string;
   price: number;
   stock: number;
+
 }
 
 interface NewProduct {
@@ -16,18 +18,14 @@ interface NewProduct {
 }
 
 // Simulated API calls
-const fetchInventory = (): Promise<Product[]> => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve([
-        { id: 1, name: 'Beef Burger', price: 45000, stock: 50 },
-        { id: 2, name: 'Sandwich', price: 32000, stock: 30 },
-        { id: 3, name: 'Cinnamon Roll', price: 20000, stock: 40 },
-        { id: 4, name: 'Choco Glaze', price: 18000, stock: 25 },
-        { id: 5, name: 'Iced Matcha Latte', price: 25000, stock: 60 },
-      ]);
-    }, 1000);
-  });
+const fetchInventory = async (): Promise<Product[]> => {
+  const response = await fetch('http://localhost:3000/api/products');
+  if(!response.ok){
+    throw new Error('Failed to fetch products');
+  }
+  const data = await response.json();
+  return data;
+  
 };
 
 const saveProduct = (product: Omit<Product, 'id'>): Promise<Product> => {
@@ -59,9 +57,7 @@ const InventoryManagement: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
   const [newProduct, setNewProduct] = useState<NewProduct>({ name: '', price: '', stock: '' });
-  const initItems: any[] = [];
   const [searchKey, setSearchKey] = useState('');
-  const [cartItems, setCartItems] = useState(initItems);
 
 
   useEffect(() => {
@@ -97,6 +93,11 @@ const InventoryManagement: React.FC = () => {
     setInventory(inventory.filter((item) => item.id !== id));
   };
 
+
+ const filterInventory = inventory.filter((product)=>
+product.name.toLowerCase().includes(searchKey.toLowerCase())
+);
+
   return (
     <div className="hide-print flex flex-row h-screen antialiased text-blue-gray-800">
       <div className="flex flex-row w-auto flex-shrink-0 pl-4 pr-2 py-4">
@@ -108,45 +109,29 @@ const InventoryManagement: React.FC = () => {
               <ProductSearch onSearch={(searchKey: string) => {
                 setSearchKey(searchKey);
               }} />
-              {/* <div className="h-full overflow-hidden mt-4">
-                <ProductMenu searchKey={searchKey} onSelect={(product: any) => {
-                  let found = false;
-                  for (var i = 0; i < cartItems.length; i++) {
-                    if (cartItems[i].product.name === product.name) {
-                      cartItems[i].quantity = cartItems[i].quantity + 1;
-                      found = true;
-                    }
-                  }
-  
-                  if (!found) {
-                    cartItems.push({ product, quantity: 1 });
-                  }
-  
-                  setCartItems([...cartItems]);
-                }} />
-              </div> */}
+           
             
       <h1 className="text-2xl font-bold mb-4">Inventory Management</h1>               
       {isLoading ? (
         <div className="text-center py-4">Loading inventory...</div>
       ) : (
-        <div className="bg-white shadow-md rounded-lg overflow-hidden">
+        <div className="bg-white shadow-md rounded-lg overflow-y-auto ">
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-gray-50">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Price</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Stock</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nombre</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Precio</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider text-center">Cantidad</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Acciones</th>
               </tr>
             </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
+            <tbody className="bg-white divide-y divide-gray-200"> 
 
-              {inventory.map((product) => (
-                <tr key={product.id}>
-                  <td className="px-6 py-4 whitespace-nowrap">{product.name}</td>
+              {filterInventory.map((product) => (
+                <tr key={product.id} className='items-center'>
+                  <td className="px-5 py-4 whitespace-nowrap">{product.name}</td>                  
                   <td className="px-6 py-4 whitespace-nowrap">RD$ {product.price.toLocaleString()}</td>
-                  <td className="px-6 py-4 whitespace-nowrap">{product.stock}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-center">{product.stock}</td> 
                   <td className="px-6 py-4 whitespace-nowrap">
                     <button
                       onClick={() => setEditingProduct(product)}

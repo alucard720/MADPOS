@@ -16,7 +16,7 @@ const App: React.FC =()=>{
   return(
 
     <Routes>
-      <Route path='/login' element={<LoginScreen onLogin={handlelogin} />}/>
+      <Route path='/' element={<LoginScreen onLogin={handlelogin} />}/>
       <Route path='/layout' element={<Layout />}/>
       <Route path='/inventory-management' element={<InventoryManagement />}/>
       

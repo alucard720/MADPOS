@@ -1,101 +1,101 @@
-id,name,price,image
-1,Lotus Leaves,$3.03,http://dummyimage.com/200x100.png/cc0000/ffffff
-2,Cotton Wet Mop 16 Oz,$5.18,http://dummyimage.com/168x100.png/5fa2dd/ffffff
-3,Bread - French Baquette,$5.58,http://dummyimage.com/143x100.png/dddddd/000000
-4,Sardines,$5.67,http://dummyimage.com/244x100.png/ff4444/ffffff
-5,Bag Stand,$9.14,http://dummyimage.com/213x100.png/ff4444/ffffff
-6,Boogies,$1.24,http://dummyimage.com/209x100.png/5fa2dd/ffffff
-7,Lettuce - Sea / Sea Asparagus,$0.13,http://dummyimage.com/164x100.png/ff4444/ffffff
-8,Wine - Blue Nun Qualitatswein,$3.58,http://dummyimage.com/198x100.png/ff4444/ffffff
-9,Pastry - Carrot Muffin - Mini,$3.45,http://dummyimage.com/116x100.png/cc0000/ffffff
-10,"Brocolinni - Gaylan, Chinese",$7.79,http://dummyimage.com/102x100.png/cc0000/ffffff
-11,"Bread - Dark Rye, Loaf",$2.13,http://dummyimage.com/190x100.png/cc0000/ffffff
-12,Beef - Bresaola,$9.97,http://dummyimage.com/208x100.png/ff4444/ffffff
-13,Paper - Brown Paper Mini Cups,$8.14,http://dummyimage.com/220x100.png/5fa2dd/ffffff
-14,Steam Pan - Half Size Deep,$8.54,http://dummyimage.com/204x100.png/5fa2dd/ffffff
-15,"Rum - Spiced, Captain Morgan",$7.57,http://dummyimage.com/238x100.png/5fa2dd/ffffff
-16,Foie Gras,$0.24,http://dummyimage.com/121x100.png/5fa2dd/ffffff
-17,"Fish - Halibut, Cold Smoked",$3.06,http://dummyimage.com/176x100.png/5fa2dd/ffffff
-18,Ostrich - Prime Cut,$8.11,http://dummyimage.com/108x100.png/cc0000/ffffff
-19,Wine - Vovray Sec Domaine Huet,$2.08,http://dummyimage.com/232x100.png/cc0000/ffffff
-20,"Tabasco Sauce, 2 Oz",$1.51,http://dummyimage.com/208x100.png/dddddd/000000
-21,Basil - Seedlings Cookstown,$1.35,http://dummyimage.com/168x100.png/dddddd/000000
-22,"Sole - Dover, Whole, Fresh",$8.45,http://dummyimage.com/169x100.png/5fa2dd/ffffff
-23,Meldea Green Tea Liquor,$6.37,http://dummyimage.com/160x100.png/ff4444/ffffff
-24,Wine - German Riesling,$5.56,http://dummyimage.com/120x100.png/cc0000/ffffff
-25,Beer - Paulaner Hefeweisse,$5.81,http://dummyimage.com/208x100.png/ff4444/ffffff
-26,"Wine - White, Mosel Gold",$0.92,http://dummyimage.com/111x100.png/cc0000/ffffff
-27,Wine - Segura Viudas Aria Brut,$0.66,http://dummyimage.com/168x100.png/ff4444/ffffff
-28,Bay Leaf Fresh,$5.55,http://dummyimage.com/138x100.png/dddddd/000000
-29,Sugar - Fine,$9.81,http://dummyimage.com/212x100.png/5fa2dd/ffffff
-30,Wine - Marlbourough Sauv Blanc,$3.77,http://dummyimage.com/161x100.png/dddddd/000000
-31,Quail - Jumbo,$4.48,http://dummyimage.com/215x100.png/cc0000/ffffff
-32,Wine - Chardonnay Mondavi,$3.11,http://dummyimage.com/209x100.png/5fa2dd/ffffff
-33,Mini - Vol Au Vents,$0.34,http://dummyimage.com/125x100.png/5fa2dd/ffffff
-34,Pastry - Key Limepoppy Seed Tea,$5.07,http://dummyimage.com/237x100.png/ff4444/ffffff
-35,Table Cloth 54x54 White,$8.74,http://dummyimage.com/237x100.png/ff4444/ffffff
-36,Tomato Puree,$5.22,http://dummyimage.com/205x100.png/ff4444/ffffff
-37,Beef - Cow Feet Split,$5.58,http://dummyimage.com/132x100.png/cc0000/ffffff
-38,"Tea - Darjeeling, Azzura",$9.32,http://dummyimage.com/147x100.png/5fa2dd/ffffff
-39,Napkin Colour,$2.24,http://dummyimage.com/187x100.png/cc0000/ffffff
-40,Wine - Valpolicella Masi,$3.80,http://dummyimage.com/175x100.png/dddddd/000000
-41,Pails With Lids,$6.14,http://dummyimage.com/114x100.png/5fa2dd/ffffff
-42,"Cheese - Manchego, Spanish",$4.71,http://dummyimage.com/202x100.png/cc0000/ffffff
-43,Wine - Winzer Krems Gruner,$8.92,http://dummyimage.com/130x100.png/5fa2dd/ffffff
-44,"Oil - Food, Lacquer Spray",$0.04,http://dummyimage.com/200x100.png/5fa2dd/ffffff
-45,Tea - Black Currant,$3.09,http://dummyimage.com/244x100.png/5fa2dd/ffffff
-46,The Pop Shoppe - Grape,$4.03,http://dummyimage.com/112x100.png/5fa2dd/ffffff
-47,Wine - Rhine Riesling Wolf Blass,$1.46,http://dummyimage.com/152x100.png/cc0000/ffffff
-48,Bread - Sour Batard,$1.83,http://dummyimage.com/209x100.png/dddddd/000000
-49,Wine - Kwv Chenin Blanc South,$1.91,http://dummyimage.com/201x100.png/5fa2dd/ffffff
-50,Appetiser - Bought,$3.40,http://dummyimage.com/118x100.png/5fa2dd/ffffff
-51,Scallops 60/80 Iqf,$9.71,http://dummyimage.com/217x100.png/5fa2dd/ffffff
-52,Towel Multifold,$6.82,http://dummyimage.com/222x100.png/cc0000/ffffff
-53,Fenngreek Seed,$3.79,http://dummyimage.com/176x100.png/cc0000/ffffff
-54,Basil - Pesto Sauce,$7.30,http://dummyimage.com/249x100.png/cc0000/ffffff
-55,Pastry - Baked Scones - Mini,$0.74,http://dummyimage.com/186x100.png/cc0000/ffffff
-56,Wine - Zinfandel Rosenblum,$9.37,http://dummyimage.com/177x100.png/ff4444/ffffff
-57,Mint - Fresh,$5.57,http://dummyimage.com/168x100.png/cc0000/ffffff
-58,"Pepper - Julienne, Frozen",$0.93,http://dummyimage.com/241x100.png/dddddd/000000
-59,Sprite - 355 Ml,$8.00,http://dummyimage.com/173x100.png/dddddd/000000
-60,"Cherries - Maraschino,jar",$5.15,http://dummyimage.com/134x100.png/5fa2dd/ffffff
-61,Coffee Caramel Biscotti,$0.75,http://dummyimage.com/194x100.png/cc0000/ffffff
-62,Gherkin - Sour,$5.89,http://dummyimage.com/132x100.png/5fa2dd/ffffff
-63,"Pepper - Red, Finger Hot",$2.04,http://dummyimage.com/114x100.png/5fa2dd/ffffff
-64,Glass Clear 8 Oz,$0.44,http://dummyimage.com/221x100.png/dddddd/000000
-65,Mints - Striped Red,$6.59,http://dummyimage.com/199x100.png/cc0000/ffffff
-66,Vaccum Bag - 14x20,$8.45,http://dummyimage.com/186x100.png/5fa2dd/ffffff
-67,Cookies Almond Hazelnut,$6.51,http://dummyimage.com/145x100.png/cc0000/ffffff
-68,Coffee Beans - Chocolate,$7.13,http://dummyimage.com/195x100.png/5fa2dd/ffffff
-69,Seabream Whole Farmed,$8.02,http://dummyimage.com/123x100.png/ff4444/ffffff
-70,Chocolate - Liqueur Cups With Foil,$4.42,http://dummyimage.com/192x100.png/ff4444/ffffff
-71,Wiberg Cure,$0.50,http://dummyimage.com/166x100.png/cc0000/ffffff
-72,Nantucket - Pomegranate Pear,$4.04,http://dummyimage.com/167x100.png/ff4444/ffffff
-73,Quinoa,$3.63,http://dummyimage.com/202x100.png/cc0000/ffffff
-74,Sole - Fillet,$2.61,http://dummyimage.com/113x100.png/5fa2dd/ffffff
-75,"Doilies - 5, Paper",$1.49,http://dummyimage.com/182x100.png/cc0000/ffffff
-76,Latex Rubber Gloves Size 9,$4.55,http://dummyimage.com/110x100.png/5fa2dd/ffffff
-77,Longos - Cheese Tortellini,$1.87,http://dummyimage.com/119x100.png/5fa2dd/ffffff
-78,Sunflower Seed Raw,$2.19,http://dummyimage.com/237x100.png/cc0000/ffffff
-79,Nantucket - Pomegranate Pear,$7.95,http://dummyimage.com/153x100.png/ff4444/ffffff
-80,Pastry - Apple Muffins - Mini,$1.31,http://dummyimage.com/218x100.png/dddddd/000000
-81,Squash - Butternut,$8.43,http://dummyimage.com/172x100.png/cc0000/ffffff
-82,Oil - Sesame,$6.68,http://dummyimage.com/152x100.png/ff4444/ffffff
-83,Chocolate - Unsweetened,$4.21,http://dummyimage.com/122x100.png/ff4444/ffffff
-84,Milk - 2%,$9.04,http://dummyimage.com/245x100.png/5fa2dd/ffffff
-85,Tart - Raisin And Pecan,$4.63,http://dummyimage.com/106x100.png/5fa2dd/ffffff
-86,Wasabi Paste,$4.63,http://dummyimage.com/223x100.png/ff4444/ffffff
-87,Cookie Chocolate Chip With,$3.00,http://dummyimage.com/101x100.png/ff4444/ffffff
-88,Lamb Shoulder Boneless Nz,$8.86,http://dummyimage.com/188x100.png/dddddd/000000
-89,Wine - Ej Gallo Sierra Valley,$2.03,http://dummyimage.com/211x100.png/dddddd/000000
-90,Thyme - Dried,$1.99,http://dummyimage.com/145x100.png/cc0000/ffffff
-91,Water - Aquafina Vitamin,$9.27,http://dummyimage.com/232x100.png/5fa2dd/ffffff
-92,Mushroom - Lg - Cello,$4.46,http://dummyimage.com/208x100.png/dddddd/000000
-93,"Lamb - Loin, Trimmed, Boneless",$4.42,http://dummyimage.com/160x100.png/dddddd/000000
-94,Salt - Celery,$9.76,http://dummyimage.com/185x100.png/ff4444/ffffff
-95,Paper Cocktail Umberlla 80 - 180,$3.80,http://dummyimage.com/234x100.png/ff4444/ffffff
-96,"Bar Mix - Pina Colada, 355 Ml",$8.73,http://dummyimage.com/100x100.png/ff4444/ffffff
-97,Tomatoes - Heirloom,$2.93,http://dummyimage.com/135x100.png/ff4444/ffffff
-98,Rappini - Andy Boy,$1.82,http://dummyimage.com/156x100.png/dddddd/000000
-99,Cake - Miini Cheesecake Cherry,$0.48,http://dummyimage.com/236x100.png/cc0000/ffffff
-100,Coffee - Hazelnut Cream,$6.19,http://dummyimage.com/115x100.png/ff4444/ffffff
+id,name,stock,price
+1,Grapes - Black,79,1.47
+2,Cornish Hen,39,79.83
+3,Pancetta,11,39.23
+4,"Lemonade - Natural, 591 Ml",85,18.99
+5,Arctic Char - Fillets,69,85.95
+6,"Beans - Black Bean, Preserved",50,30.54
+7,Scampi Tail,6,42.29
+8,"Shrimp - Baby, Warm Water",49,53.43
+9,Beer - Moosehead,62,34.93
+10,Honey - Liquid,2,71.29
+11,Seedlings - Clamshell,31,99.34
+12,Wine - Cotes Du Rhone Parallele,30,31.94
+13,Cognac - Courvaisier,24,48.13
+14,Tea - Black Currant,83,68.03
+15,Cherries - Fresh,80,35.88
+16,Beef - Inside Round,67,98.78
+17,Neckerchief Blck,67,56.73
+18,Cabbage - Nappa,7,76.57
+19,Chicken - White Meat With Tender,12,60.9
+20,Cheese - Grie Des Champ,61,99.16
+21,Pastry - Banana Muffin - Mini,40,88.32
+22,"Bread - Roll, Calabrese",80,14.43
+23,Sauce - Roasted Red Pepper,20,9.05
+24,"Nut - Pecan, Pieces",70,17.48
+25,"Juice - Orange, Concentrate",49,73.34
+26,"Dill - Primerba, Paste",34,24.62
+27,Ecolab - Hobart Upr Prewash Arm,47,11.75
+28,Cabbage - Savoy,47,89.23
+29,True - Vue Containers,73,83.66
+30,Chinese Foods - Pepper Beef,96,60.82
+31,Sauce - Plum,46,81.94
+32,"Artichokes - Knobless, White",89,86.63
+33,Oven Mitts - 15 Inch,58,55.48
+34,Coffee - Egg Nog Capuccino,99,85.65
+35,"Sugar - Brown, Individual",76,98.79
+36,Rhubarb,25,19.25
+37,"Ecolab - Orange Frc, Cleaner",60,75.04
+38,Wine - Sauvignon Blanc Oyster,67,46.28
+39,Hummus - Spread,46,68.39
+40,"Apple - Delicious, Golden",36,33.75
+41,Whmis - Spray Bottle Trigger,72,93.43
+42,Tea - Herbal I Love Lemon,77,5.36
+43,Bagelers,41,60.81
+44,"Soup - Campbells, Beef Barley",34,79.71
+45,Shrimp - Prawn,95,75.61
+46,"Cheese - Brie, Triple Creme",50,58.56
+47,Beef - Ox Tongue,20,54.35
+48,Sugar - White Packet,54,17.23
+49,Cheese - Bocconcini,16,40.18
+50,Chinese Foods - Plain Fried Rice,97,78.9
+51,"Cod - Salted, Boneless",86,27.95
+52,Chicken - Tenderloin,11,60.48
+53,"Wine - Red, Lurton Merlot De",92,87.25
+54,Cookies - Englishbay Wht,25,21.1
+55,Tomatoes - Grape,46,55.84
+56,Lemon Balm - Fresh,91,98.68
+57,"Veal - Inside, Choice",85,40.71
+58,The Pop Shoppe - Lime Rickey,14,78.56
+59,Oil - Sesame,41,89.21
+60,Cheese Cloth No 60,8,92.27
+61,Cotton Wet Mop 16 Oz,19,59.88
+62,Apron,60,16.23
+63,"Pepper - White, Whole",49,54.52
+64,Cheese - Cambozola,77,17.46
+65,"Yeast - Fresh, Fleischman",88,27.65
+66,Hand Towel,48,37.24
+67,"Sole - Dover, Whole, Fresh",59,77.55
+68,Plastic Wrap,4,68.44
+69,"Pasta - Bauletti, Chicken White",74,4.84
+70,Godiva White Chocolate,73,93.62
+71,Crab - Imitation Flakes,61,80.12
+72,Table Cloth 53x69 White,87,81.54
+73,Oysters - Smoked,15,20.32
+74,"Mushroom - Chantrelle, Fresh",69,16.3
+75,Veal - Striploin,47,45.57
+76,Madeira,25,78.78
+77,Wheat - Soft Kernal Of Wheat,40,69.11
+78,"Fish - Scallops, Cold Smoked",42,46.73
+79,Sauce - Ranch Dressing,19,43.82
+80,Sea Bass - Fillets,85,72.38
+81,Evaporated Milk - Skim,51,33.7
+82,"Lentils - Red, Dry",60,36.79
+83,Taro Root,63,21.97
+84,Wine - Ej Gallo Sonoma,94,27.87
+85,Pork - European Side Bacon,81,16.42
+86,Shark - Loin,16,31.85
+87,Juice - Ocean Spray Kiwi,74,52.14
+88,Chutney Sauce,23,69.58
+89,Cheese - Le Cru Du Clocher,66,16.31
+90,Coffee - Dark Roast,64,15.04
+91,Tea - Honey Green Tea,8,13.12
+92,Cheese - Swiss Sliced,97,74.16
+93,Aspic - Clear,93,40.73
+94,Foil Wrap,3,72.9
+95,Sprite - 355 Ml,65,14.48
+96,Tuna - Fresh,52,9.45
+97,Sauce - Soy Low Sodium - 3.87l,51,9.55
+98,Wine - Chianti Classica Docg,73,92.48
+99,Sugar - White Packet,99,60.29
+100,"Nestea - Ice Tea, Diet",58,53.33
