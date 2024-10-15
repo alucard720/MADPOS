@@ -5,8 +5,12 @@ const Checkout = ({ items, onSubmit }: any) => {
     const total = items.reduce((accumulator: number, item: any) => accumulator + (+item.product.price * +item.quantity), 0);
     const [cash, setCash] = useState(0);
     const change = cash - total;
-    const[credit, setCredit] = useState(0);
-    const change2 = total;
+    const credit = total
+
+    const handleCreditPayment =()=>{
+        onSubmit(credit, 'credit');
+    }
+    
 
     return <div className="select-none h-auto w-full text-center pt-3 pb-4 px-4">
         <div className="flex mb-3 text-lg font-semibold text-blue-gray-700">
@@ -16,12 +20,18 @@ const Checkout = ({ items, onSubmit }: any) => {
         <div className="mb-3 text-blue-gray-700 px-3 pt-2 pb-3 rounded-lg bg-blue-gray-50 space-y-2">
             <div className="flex text-lg font-semibold">
                 <div className="flex-grow text-left">Efectivo</div>
+                
                 <div className="flex text-right">
                     <div className="mr-2">RD$</div>
                     <input value={cash} type="number" onChange={(event) => {
                         setCash(+event.target.value);
                     }} className="w-28 text-right bg-white shadow rounded-lg focus:bg-white focus:shadow-lg px-2 focus:outline-none" />
-                </div>                
+                </div>  
+                              
+            </div>
+             <div className="grid w-full gap-2 mt-2">
+                <button className="bg-white rounded-lg shadow hover:shadow-lg focus:outline-none  w-full text-lg" onClick={handleCreditPayment} ><span>Tarjeta</span></button>
+               
             </div>
         
            
@@ -35,10 +45,7 @@ const Checkout = ({ items, onSubmit }: any) => {
                 <button className="bg-white rounded-lg shadow hover:shadow-lg focus:outline-none inline-block px-2 py-1 text-sm" onClick={() => setCash(cash + 1000)}>+<span>1000</span></button>
                 <button className="bg-white rounded-lg shadow hover:shadow-lg focus:outline-none inline-block px-2 py-1 text-sm" onClick={() => setCash(0)}><span>C</span></button>
             </div>
-            <div className="grid w-full gap-2 mt-2">
-                <button className="bg-white rounded-lg shadow hover:shadow-lg focus:outline-none  w-full text-lg" onClick={() => setCredit(credit)}><span>Tarjeta</span></button>
-               
-            </div>
+           
         </div>
         {
             total > 0

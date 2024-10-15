@@ -13,8 +13,8 @@ const Receipt = ({ items, cash, onProceed, onClose, credit } : any) => {
       <div id="receipt-content" className="text-left w-full text-sm p-6 overflow-auto">
         <div className="text-center">
           <img src={logo} alt="Tailwind POS" className="mb-3 w-8 h-8 inline-block"/>
-          <h2 className="text-xl font-semibold">MAD POS</h2>
-          <p>Direccion de la Tienda</p>
+          <h2 className="text-xl font-semibold">MAD-POS</h2>
+          <p>Direccion de Tienda</p>
         </div>
         <div className="flex mt-4 text-xs">
           <div className="flex-grow">No: <span>{receiptNo}</span></div>
@@ -40,7 +40,7 @@ const Receipt = ({ items, cash, onProceed, onClose, credit } : any) => {
                     <small>RD$ {item.product.price}</small>
                   </td>
                   <td className="py-2 text-center">{item.quantity}</td>
-                  <td className="py-2 text-right">PHP {item.product.price * item.quantity}</td>
+                  <td className="py-2 text-right">RD$ {item.product.price * item.quantity}</td>
                 </tr>))}
               </tbody>
           </table>
@@ -51,23 +51,28 @@ const Receipt = ({ items, cash, onProceed, onClose, credit } : any) => {
             <div className="flex-grow">TOTAL</div>
             <div>RD$ {total}</div>
           </div>
-          <div className="flex text-xs font-semibold">
-            <div className="flex-grow">EFECTIVO</div>
-            <div>RD$ {cash}</div>
-          </div>
-          <div className="flex text-xs font-semibold">
-            <div className="flex-grow">TARJETA</div>
-            <div>RD$ {credit}</div>
-          </div>
-          <hr className="my-2"/>
-          <div className="flex text-xs font-semibold">
-            <div className="flex-grow">CAMBIO</div>
-            <div>{cash - total}</div>
-          </div>
+          
+               <div className="flex text-xs font-semibold">
+               <div className="flex-grow">EFECTIVO/TARJETA</div>
+               <div>RD$ {cash}</div>
+             </div>   
+    
+                
+
+        <hr className="my-2"/>
+                   
+            <div className="flex text-xs font-semibold">
+              <div className="flex-grow">CAMBIO</div>
+              <div>{cash - total}</div>
+            </div>
+       
+
+  
+
         </div>
       </div>
       <div className="p-4 w-full">
-        <button onClick={() => { onProceed(); }} className="bg-orange-500 text-white text-lg px-4 py-3 rounded-2xl w-full focus:outline-none">PROCEDER</button>
+        <button onClick={() => {onProceed(); }} className="bg-orange-500 text-white text-lg px-4 py-3 rounded-2xl w-full focus:outline-none">PROCEDER</button>
       </div>
     </div>
   </div>;
