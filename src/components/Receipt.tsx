@@ -52,12 +52,15 @@ const Receipt = ({ items, cash, onProceed, onClose, credit } : any) => {
             <div>RD$ {total}</div>
           </div>
           
-               <div className="flex text-xs font-semibold">
-               <div className="flex-grow">EFECTIVO/TARJETA</div>
+           <div className="flex text-xs font-semibold">
+               <div className="flex-grow">EFECTIVO</div>
                <div>RD$ {cash}</div>
-             </div>   
+             </div>    
     
-                
+             <div className="flex text-xs font-semibold">
+               <div className="flex-grow">TARJETA</div>
+               <div>RD$ {credit}</div>
+             </div> 
 
         <hr className="my-2"/>
                    

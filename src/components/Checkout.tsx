@@ -5,11 +5,9 @@ const Checkout = ({ items, onSubmit }: any) => {
     const total = items.reduce((accumulator: number, item: any) => accumulator + (+item.product.price * +item.quantity), 0);
     const [cash, setCash] = useState(0);
     const change = cash - total;
-    const credit = total
+    const [credit, setCredit] = useState(0);
 
-    const handleCreditPayment =()=>{
-        onSubmit(credit, 'credit');
-    }
+  
     
 
     return <div className="select-none h-auto w-full text-center pt-3 pb-4 px-4">
@@ -30,7 +28,9 @@ const Checkout = ({ items, onSubmit }: any) => {
                               
             </div>
              <div className="grid w-full gap-2 mt-2">
-                <button className="bg-white rounded-lg shadow hover:shadow-lg focus:outline-none  w-full text-lg" onClick={handleCreditPayment} ><span>Tarjeta</span></button>
+                <button className="bg-white rounded-lg shadow hover:shadow-lg focus:outline-none  w-full text-lg" onClick={() => {
+            onSubmit(credit, 'credit');
+        }} ><span>Tarjeta</span></button>
                
             </div>
         
@@ -56,14 +56,14 @@ const Checkout = ({ items, onSubmit }: any) => {
                         <div className="text-right flex-grow text-orange-600">RD$ {change}</div>
                     </div> :
                     <div className="flex mb-3 text-lg font-semibold bg-pink-100 text-blue-gray-700 rounded-lg py-2 px-3">
-                        <div className="text-right flex-grow text-pink-600">RD$ {change}</div>
+                        <div className="text-right flex-grow text-pink-600">RD$ {credit}</div>
                     </div>
             )
         }
          
        
         <button onClick={() => {
-            onSubmit(cash);
+            onSubmit(cash, 'cash');
         }} className="text-white rounded-2xl text-lg w-full py-3 focus:outline-none bg-orange-500 hover:bg-orange-600">
             COBRAR
         </button>
